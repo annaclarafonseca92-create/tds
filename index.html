@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Rio Fitness – Musculação, Spinning e Aulas Coletivas no Rio de Janeiro</title>
+    <meta name="description" content="Transforme sua energia em resultado na Academia Rio Fitness. Musculação premium, aulas coletivas, personal trainer e muito mais no coração do Rio de Janeiro. Agende sua aula grátis!">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <style>
+        :root {
+            --preto-profundo: #0d0d0d;
+            --grafite: #1a1a1a;
+            --grafite-claro: #2a2a2a;
+            --laranja-vibrante: #f15a24;
+            --laranja-hover: #e04814;
+            --laranja-claro: #ff7b4a;
+            --branco: #ffffff;
+            --off-white: #f8f7f4;
+            --bege-areia: #e8dcc8;
+            --amarelo-ouro: #c9a84c;
+            --cinza-claro: #eaeaea;
+            --sombra-suave: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --sombra-media: 0 8px 32px rgba(0, 0, 0, 0.12);
+            --sombra-laranja: 0 8px 24px rgba(241, 90, 36, 0.35);
+            --borda-arredondada: 24px;
+            --borda-arredondada-lg: 32px;
+            --transicao: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', 'Poppins', sans-serif;
+            background-color: var(--branco);
+            color: var(--grafite);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Cursor customizado sutil (apenas desktop) */
+        @media (hover: hover) and (pointer: fine) {
+            body {
+                cursor: default;
+            }
+            a,
+            button,
+            .btn,
+            .card-clickable {
+                cursor: pointer;
+            }
+        }
+
+        /* TIPOGRAFIA */
+        h1,
+        h2,
+        h3,
+        .display-title {
+            font-family: 'Bebas Neue', 'Poppins', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            line-height: 1.05;
+        }
+        h2 {
+            font-size: clamp(2.2rem, 5vw, 3.6rem);
+            margin-bottom: 0.5rem;
+        }
+        h3 {
+            font-size: clamp(1.4rem, 3vw, 1.9rem);
+        }
+
+        /* UTILITÁRIOS */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .text-laranja {
+            color: var(--laranja-vibrante);
+        }
+        .bg-preto {
+            background-color: var(--preto-profundo);
+        }
+        .bg-grafite {
+            background-color: var(--grafite);
+        }
+        .bg-off-white {
+            background-color: var(--off-white);
+        }
+
+        /* BOTÕES */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-family: 'Poppins', 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            border: none;
+            transition: var(--transicao);
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            letter-spacing: 0.01em;
+            min-height: 48px;
+            min-width: 48px;
+        }
+        .btn-laranja {
+            background: var(--laranja-vibrante);
+            color: var(--branco);
+            box-shadow: 0 4px 16px rgba(241, 90, 36, 0.3);
+        }
+        .btn-laranja:hover {
+            background: var(--laranja-hover);
+            transform: scale(1.05);
+            box-shadow: var(--sombra-laranja);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--branco);
+            border: 2px solid var(--branco);
+        }
+        .btn-outline:hover {
+            background: var(--branco);
+            color: var(--preto-profundo);
+            transform: scale(1.04);
+        }
+        .btn-preto {
+            background: var(--preto-profundo);
+            color: var(--branco);
+            border: 2px solid var(--preto-profundo);
+        }
+        .btn-preto:hover {
+            background: var(--grafite-claro);
+            border-color: var(--grafite-claro);
+            transform: scale(1.04);
+        }
+        .btn-whatsapp {
+            background: #25D366;
+            color: #fff;
+            gap: 10px;
+            font-weight: 700;
+            box-shadow: 0 4px 18px rgba(37, 211, 102, 0.35);
+        }
+        .btn-whatsapp:hover {
+            background: #1fb855;
+            transform: scale(1.06);
+            box-shadow: 0 8px 28px rgba(37, 211, 102, 0.45);
+        }
+        .btn-ripple {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-ripple::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.35);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease-out, height 0.6s ease-out, opacity 0.6s ease-out;
+        }
+        .btn-ripple:active::after {
+            width: 300px;
+            height: 300px;
+            opacity: 0;
+        }
+
+        /* HEADER */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 14px 0;
+            transition: background 400ms ease, box-shadow 400ms ease, padding 400ms ease;
+            background: transparent;
+        }
+        .header.scrolled {
+            background: rgba(13, 13, 13, 0.85);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
+            padding: 8px 0;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .logo-img {
+            height: 46px;
+            width: auto;
+            filter: brightness(0) invert(1);
+            transition: filter 300ms;
+        }
+        .header.scrolled .logo-img {
+            filter: brightness(0) invert(1);
+        }
+        .logo-placeholder {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.8rem;
+            color: #fff;
+            letter-spacing: 0.04em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+        }
+        .logo-placeholder i {
+            color: var(--laranja-vibrante);
+            font-size: 1.6rem;
+        }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+            align-items: center;
+        }
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.02em;
+            position: relative;
+            padding: 4px 0;
+            transition: color 0.3s;
+            font-family: 'Poppins', 'Inter', sans-serif;
+        }
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--laranja-vibrante);
+            transition: width 0.35s ease, left 0.35s ease;
+            border-radius: 2px;
+        }
+        .nav-menu a:hover {
+            color: var(--laranja-vibrante);
+        }
+        .nav-menu a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .btn-header-whatsapp {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: #25D366;
+            color: #fff;
+            padding: 9px 16px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: var(--transicao);
+            white-space: nowrap;
+        }
+        .btn-header-whatsapp:hover {
+            background: #1fb855;
+            transform: scale(1.05);
+        }
+        .btn-header-cta {
+            padding: 10px 20px;
+            font-size: 0.85rem;
+        }
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 36px;
+            height: 36px;
+            flex-direction: column;
+            justify-content: center;
+            gap: 6px;
+            z-index: 1001;
+            padding: 4px;
+        }
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 2.5px;
+            background: #fff;
+            border-radius: 2px;
+            transition: var(--transicao);
+        }
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        /* MENU MOBILE */
+        .mobile-menu-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+        }
+        .mobile-menu-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .mobile-menu-overlay nav ul {
+            list-style: none;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .mobile-menu-overlay nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 0.04em;
+            transition: color 0.3s;
+        }
+        .mobile-menu-overlay nav a:hover {
+            color: var(--laranja-vibrante);
+        }
+        .mobile-menu-cta {
+            margin-top: 32px;
+        }
+
+        /* HERO SLIDER */
+        .hero-slider {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            min-height: 600px;
+            overflow: hidden;
+        }
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 1s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-slide.active {
+            opacity: 1;
+            z-index: 1;
+        }
+        .hero-slide::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(13, 13, 13, 0.75) 0%, rgba(13, 13, 13, 0.55) 50%, rgba(13, 13, 13, 0.8) 100%);
+            z-index: 1;
+        }
+        .hero-slide-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #fff;
+            max-width: 800px;
+            padding: 0 24px;
+        }
+        .hero-slide-content h2 {
+            font-size: clamp(2.6rem, 6vw, 4.5rem);
+            margin-bottom: 16px;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+        }
+        .hero-slide-content p {
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            margin-bottom: 28px;
+            font-weight: 400;
+            opacity: 0.9;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .hero-dots {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            display: flex;
+            gap: 10px;
+        }
+        .hero-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: var(--transicao);
+        }
+        .hero-dot.active {
+            background: var(--laranja-vibrante);
+            border-color: #fff;
+            transform: scale(1.3);
+        }
+        .hero-arrows {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 3;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            pointer-events: none;
+        }
+        .hero-arrow {
+            pointer-events: all;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #fff;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: var(--transicao);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(4px);
+        }
+        .hero-arrow:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+
+        /* FAIXA CONFIANÇA */
+        .faixa-confianca {
+            background: #fff;
+            padding: 40px 0;
+            position: relative;
+            z-index: 5;
+            margin-top: -1px;
+        }
+        .faixa-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            text-align: center;
+        }
+        .faixa-card {
+            background: #fff;
+            border-radius: var(--borda-arredondada);
+            padding: 28px 20px;
+            box-shadow: var(--sombra-suave);
+            transition: var(--transicao);
+        }
+        .faixa-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--sombra-media);
+        }
+        .faixa-card i {
+            font-size: 2.4rem;
+            color: var(--laranja-vibrante);
+            margin-bottom: 12px;
+            display: block;
+        }
+        .faixa-card span {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--grafite);
+        }
+
+        /* SOBRE NÓS */
+        .sobre-section {
+            padding: 80px 0;
+            background: #f9f8f6;
+            position: relative;
+        }
+        .sobre-section::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60'%3E%3Cpath fill='%23ffffff' d='M0,30 C360,0 720,60 1080,30 C1260,15 1380,5 1440,0 L1440,60 L0,60 Z'/%3E%3C/svg%3E") no-repeat center top;
+            background-size: cover;
+        }
+        .sobre-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        .sobre-imagem {
+            border-radius: var(--borda-arredondada-lg);
+            overflow: hidden;
+            box-shadow: var(--sombra-media);
+            position: relative;
+        }
+        .sobre-imagem img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: var(--borda-arredondada-lg);
+            transition: transform 8s ease;
+        }
+        .sobre-imagem:hover img {
+            transform: scale(1.03);
+        }
+        .sobre-texto h2 {
+            margin-bottom: 16px;
+        }
+        .sobre-texto p {
+            font-size: 1.05rem;
+            color: #444;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        .valores-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 24px;
+        }
+        .valor-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 20px 16px;
+            text-align: center;
+            border-left: 4px solid transparent;
+            transition: var(--transicao);
+            box-shadow: var(--sombra-suave);
+        }
+        .valor-card:hover {
+            transform: translateY(-5px);
+            border-left-color: var(--laranja-vibrante);
+            box-shadow: var(--sombra-media);
+        }
+        .valor-card i {
+            font-size: 1.8rem;
+            color: var(--laranja-vibrante);
+            margin-bottom: 8px;
+        }
+        .valor-card h4 {
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+        }
+        .valor-card p {
+            font-size: 0.8rem;
+            color: #666;
+            margin: 0;
+        }
+
+        /* MODALIDADES */
+        .modalidades-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+        .modalidades-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .modalidade-card {
+            border-radius: var(--borda-arredondada);
+            overflow: hidden;
+            background: #fff;
+            box-shadow: var(--sombra-suave);
+            transition: var(--transicao);
+            position: relative;
+        }
+        .modalidade-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--sombra-media);
+        }
+        .modalidade-card-img {
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            transition: transform 0.6s ease;
+        }
+        .modalidade-card:hover .modalidade-card-img {
+            transform: scale(1.1);
+        }
+        .modalidade-card-img::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, rgba(13, 13, 13, 0.8) 0%, rgba(13, 13, 13, 0.1) 60%);
+        }
+        .modalidade-card-body {
+            padding: 20px;
+            position: relative;
+        }
+        .modalidade-card-body h3 {
+            margin-bottom: 8px;
+            font-size: 1.3rem;
+        }
+        .modalidade-card-body p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+        .modalidade-card-body .btn {
+            font-size: 0.85rem;
+            padding: 10px 18px;
+        }
+        .modalidade-icon {
+            position: absolute;
+            top: -30px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: var(--laranja-vibrante);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.4rem;
+            box-shadow: 0 4px 14px rgba(241, 90, 36, 0.4);
+            z-index: 2;
+        }
+
+        /* PLANOS */
+        .planos-section {
+            padding: 80px 0;
+            background: #f9f8f6 url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L35 25 L55 25 L38 37 L44 57 L30 46 L16 57 L22 37 L5 25 L25 25 Z' fill='none' stroke='%23ddd' stroke-width='0.8' opacity='0.4'/%3E%3C/svg%3E");
+        }
+        .planos-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 36px;
+        }
+        .plano-tab {
+            padding: 10px 22px;
+            border-radius: 50px;
+            background: #fff;
+            border: 2px solid #e0e0e0;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: var(--transicao);
+        }
+        .plano-tab.active,
+        .plano-tab:hover {
+            background: var(--laranja-vibrante);
+            color: #fff;
+            border-color: var(--laranja-vibrante);
+        }
+        .planos-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .plano-card {
+            background: #fff;
+            border-radius: var(--borda-arredondada);
+            padding: 28px 22px;
+            text-align: center;
+            box-shadow: var(--sombra-suave);
+            transition: var(--transicao);
+            position: relative;
+        }
+        .plano-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--sombra-media);
+        }
+        .plano-card.destaque {
+            border: 2px solid var(--laranja-vibrante);
+            box-shadow: var(--sombra-laranja);
+        }
+        .badge-popular {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--laranja-vibrante);
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        .plano-preco {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: var(--preto-profundo);
+            margin: 12px 0;
+        }
+        .plano-preco small {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: #777;
+        }
+        .plano-preco-antigo {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        .plano-beneficios {
+            list-style: none;
+            text-align: left;
+            margin: 16px 0;
+            font-size: 0.9rem;
+        }
+        .plano-beneficios li {
+            padding: 4px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .plano-beneficios li i {
+            color: #25D366;
+            font-size: 0.8rem;
+        }
+
+        /* DEPOIMENTOS */
+        .depoimentos-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f15a24 0%, #1a1a1a 70%);
+            color: #fff;
+        }
+        .depoimentos-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .depoimento-card {
+            background: #fff;
+            color: #333;
+            border-radius: var(--borda-arredondada);
+            padding: 22px;
+            box-shadow: var(--sombra-media);
+            transition: var(--transicao);
+        }
+        .depoimento-card:hover {
+            transform: rotate(-1deg) scale(1.02);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+        }
+        .depoimento-estrelas {
+            color: #f5a623;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+        .depoimento-card p {
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+        .depoimento-autor {
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: var(--laranja-vibrante);
+        }
+
+        /* FAQ */
+        .faq-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+        .faq-accordion {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #f9f8f6;
+            border-radius: 16px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            transition: var(--transicao);
+            border: 1px solid #eee;
+        }
+        .faq-question {
+            padding: 18px 22px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+        .faq-question i {
+            transition: transform 0.3s;
+            color: var(--laranja-vibrante);
+        }
+        .faq-item.active .faq-question i {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            padding: 0 22px;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            padding: 0 22px 18px;
+        }
+        .faq-answer p {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* CTA FINAL */
+        .cta-final {
+            padding: 80px 0;
+            background: var(--preto-profundo);
+            color: #fff;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-final::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='80' r='30' fill='%23f15a24' opacity='0.06'/%3E%3Ccircle cx='80' cy='20' r='25' fill='%23f15a24' opacity='0.05'/%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+        .cta-final h2 {
+            position: relative;
+            z-index: 1;
+            font-size: clamp(2rem, 4vw, 3.2rem);
+        }
+        .cta-final p {
+            position: relative;
+            z-index: 1;
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+            opacity: 0.85;
+        }
+        .newsletter-form {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .newsletter-form input {
+            flex: 1;
+            min-width: 220px;
+            padding: 14px 20px;
+            border-radius: 50px;
+            border: 2px solid #444;
+            background: #1a1a1a;
+            color: #fff;
+            font-size: 0.95rem;
+            outline: none;
+            transition: var(--transicao);
+        }
+        .newsletter-form input:focus {
+            border-color: var(--laranja-vibrante);
+        }
+
+        /* RODAPÉ */
+        .footer {
+            background: #111;
+            color: #ccc;
+            padding: 50px 0 20px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            margin-bottom: 30px;
+        }
+        .footer h4 {
+            color: #fff;
+            margin-bottom: 14px;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        .footer a {
+            color: #bbb;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s;
+            display: block;
+            margin-bottom: 6px;
+        }
+        .footer a:hover {
+            color: var(--laranja-vibrante);
+        }
+        .footer-social {
+            display: flex;
+            gap: 12px;
+            margin-top: 8px;
+        }
+        .footer-social a {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: #2a2a2a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            transition: var(--transicao);
+        }
+        .footer-social a:hover {
+            background: var(--laranja-vibrante);
+            color: #fff;
+        }
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 16px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+        .footer-cnpj {
+            font-size: 0.75rem;
+            color: #888;
+            margin-top: 4px;
+        }
+
+        /* BOTÃO FLUTUANTE WHATSAPP */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1000;
+            background: #25D366;
+            color: #fff;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+            text-decoration: none;
+            transition: var(--transicao);
+            animation: pulse-whatsapp 2s ease-in-out infinite;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.55);
+        }
+        @keyframes pulse-whatsapp {
+            0%,
+            100% {
+                box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+            }
+            50% {
+                box-shadow: 0 6px 40px rgba(37, 211, 102, 0.7), 0 0 0 16px rgba(37, 211, 102, 0.08);
+            }
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 1024px) {
+            .modalidades-grid,
+            .planos-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .depoimentos-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .sobre-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .valores-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .btn-header-whatsapp {
+                display: none;
+            }
+            .btn-header-cta {
+                padding: 8px 14px;
+                font-size: 0.78rem;
+            }
+            .hero-slider {
+                height: 75vh;
+                min-height: 480px;
+            }
+            .faixa-grid {
+                grid-template-columns: 1fr;
+            }
+            .modalidades-grid,
+            .planos-grid {
+                grid-template-columns: 1fr;
+            }
+            .depoimentos-grid {
+                grid-template-columns: 1fr;
+            }
+            .valores-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .sobre-section {
+                padding: 50px 0;
+            }
+            .planos-tabs {
+                gap: 4px;
+            }
+            .plano-tab {
+                padding: 8px 14px;
+                font-size: 0.78rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .header-inner {
+                padding: 0 12px;
+            }
+            .logo-placeholder {
+                font-size: 1.3rem;
+            }
+            .btn-header-cta {
+                font-size: 0.7rem;
+                padding: 7px 10px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .footer-social {
+                justify-content: center;
+            }
+            .whatsapp-float {
+                width: 48px;
+                height: 48px;
+                font-size: 1.3rem;
+                bottom: 16px;
+                right: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#inicio" class="logo-placeholder" aria-label="Academia Rio Fitness – Início">
+                <i class="fa-solid fa-dumbbell"></i> RIO FITNESS
+            </a>
+            <nav aria-label="Navegação principal">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#modalidades">Modalidades</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1%2C+quero+agendar+uma+aula+gr%C3%A1tis%21" target="_blank" rel="noopener" class="btn-header-whatsapp" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i> (21) 9xxxx-xxxx
+                </a>
+                <a href="#cta-final" class="btn btn-laranja btn-header-cta btn-ripple">Aula Grátis</a>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MENU MOBILE OVERLAY -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <nav>
+            <ul>
+                <li><a href="#inicio" class="mobile-nav-link">Início</a></li>
+                <li><a href="#sobre" class="mobile-nav-link">Sobre Nós</a></li>
+                <li><a href="#modalidades" class="mobile-nav-link">Modalidades</a></li>
+                <li><a href="#planos" class="mobile-nav-link">Planos</a></li>
+                <li><a href="#depoimentos" class="mobile-nav-link">Depoimentos</a></li>
+                <li><a href="#contato" class="mobile-nav-link">Contato</a></li>
+            </ul>
+            <div class="mobile-menu-cta">
+                <a href="#cta-final" class="btn btn-laranja btn-ripple mobile-nav-link" style="font-size:1.1rem;padding:14px 30px;">Agende sua Visita</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- HERO SLIDER -->
+    <section class="hero-slider" id="inicio" aria-label="Slider principal">
+        <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80');">
+            <div class="hero-slide-content" data-aos="fade-up" data-aos-duration="800">
+                <h2>Transforme sua energia em resultado</h2>
+                <p>Treinos personalizados, equipamentos de ponta e a motivação que você precisa para ir além.</p>
+                <div class="hero-buttons">
+                    <a href="#planos" class="btn btn-laranja btn-ripple">Nossos Planos</a>
+                    <a href="#cta-final" class="btn btn-outline">Agende Aula Grátis</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1600&q=80');">
+            <div class="hero-slide-content" data-aos="fade-up" data-aos-duration="800">
+                <h2>Do iniciante ao atleta, o seu lugar é aqui</h2>
+                <p>Musculação, spinning, funcional e muito mais em um só espaço.</p>
+                <div class="hero-buttons">
+                    <a href="#modalidades" class="btn btn-laranja btn-ripple">Ver Modalidades</a>
+                    <a href="#cta-final" class="btn btn-outline">Aula Experimental</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1600&q=80');">
+            <div class="hero-slide-content" data-aos="fade-up" data-aos-duration="800">
+                <h2>Referência em bem-estar e performance no Rio</h2>
+                <p>Desde 2010 transformando vidas com atendimento de excelência.</p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn btn-laranja btn-ripple">Como Chegar</a>
+                    <a href="#depoimentos" class="btn btn-outline">Ver Depoimentos</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-dots" id="heroDots"></div>
+        <div class="hero-arrows">
+            <button class="hero-arrow" id="heroPrev" aria-label="Slide anterior"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="hero-arrow" id="heroNext" aria-label="Próximo slide"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- FAIXA DE CONFIANÇA -->
+    <section class="faixa-confianca" data-aos="fade-up" data-aos-duration="700">
+        <div class="container">
+            <div class="faixa-grid">
+                <div class="faixa-card">
+                    <i class="fa-solid fa-user-gear"></i>
+                    <span>Aulas com Personal Trainer</span>
+                </div>
+                <div class="faixa-card">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <span>App de Treinos Exclusivo</span>
+                </div>
+                <div class="faixa-card">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4,9 estrelas no Google</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE NÓS -->
+    <section class="sobre-section" id="sobre">
+        <div class="container">
+            <div class="sobre-grid">
+                <div class="sobre-imagem" data-aos="fade-right" data-aos-duration="800">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80" alt="Equipe de professores reunida com alunos variados treinando na academia" loading="lazy" width="600" height="400">
+                </div>
+                <div class="sobre-texto" data-aos="fade-left" data-aos-duration="800">
+                    <h2>Muito mais que uma academia</h2>
+                    <p>Nascidos no coração do Rio de Janeiro, somos uma empresa que respira movimento e superação. Nossa jornada começou com uma pequena sala de musculação e hoje nos orgulhamos de oferecer uma estrutura completa, com estúdio de aulas coletivas, área de peso livre, box funcional e acompanhamento profissional. Cada gota de suor é nossa maior conquista.</p>
+                    <p><strong>Ale Consultoria e Servicos Veterinarios LTDA</strong> – CNPJ 64.786.364/0001-21, uma empresa séria, estabelecida e comprometida com a sua melhor versão.</p>
+                    <div class="valores-grid">
+                        <div class="valor-card">
+                            <i class="fa-solid fa-bullseye"></i>
+                            <h4>MISSÃO</h4>
+                            <p>Transformar vidas através do movimento.</p>
+                        </div>
+                        <div class="valor-card">
+                            <i class="fa-solid fa-eye"></i>
+                            <h4>VISÃO</h4>
+                            <p>Ser referência em bem-estar no Rio.</p>
+                        </div>
+                        <div class="valor-card">
+                            <i class="fa-solid fa-heart"></i>
+                            <h4>VALORES</h4>
+                            <p>Respeito, energia e superação.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODALIDADES -->
+    <section class="modalidades-section" id="modalidades">
+        <div class="container">
+            <h2 data-aos="fade-up">Do iniciante ao atleta, temos o treino certo para você</h2>
+            <p data-aos="fade-up" data-aos-delay="100" style="text-align:center;max-width:700px;margin:0 auto 40px;color:#555;">Seja qual for o seu objetivo, nossa estrutura está pronta para te receber com o melhor da fitness carioca.</p>
+            <div class="modalidades-grid">
+                <div class="modalidade-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="modalidade-card-img" style="background-image:url('https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80');"></div>
+                    <div class="modalidade-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                    <div class="modalidade-card-body">
+                        <h3>Musculação Premium</h3>
+                        <p>Equipamentos de última geração, acompanhamento profissional e fichas de treino personalizadas. Planos a partir de R$ 99,90.</p>
+                        <a href="https://wa.me/5521999999999?text=Ol%C3%A1%2C+quero+saber+mais+sobre+Muscula%C3%A7%C3%A3o+Premium%21" target="_blank" rel="noopener" class="btn btn-laranja btn-ripple btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Agende Aula Grátis</a>
+                    </div>
+                </div>
+                <div class="modalidade-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="modalidade-card-img" style="background-image:url('https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?w=600&q=80');"></div>
+                    <div class="modalidade-icon"><i class="fa-solid fa-people-group"></i></div>
+                    <div class="modalidade-card-body">
+                        <h3>Aulas Coletivas</h3>
+                        <p>Spinning, zumba, jump, yoga e mais de 20 modalidades em estúdios climatizados. Energia de sobra!</p>
+                        <a href="https://wa.me/5521999999999?text=Ol%C3%A1%2C+quero+experimentar+as+Aulas+Coletivas%21" target="_blank" rel="noopener" class="btn btn-laranja btn-ripple btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Agende Aula Grátis</a>
+                    </div>
+                </div>
+                <div class="modalidade-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="modalidade-card-img" style="background-image:url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80');"></div>
+                    <div class="modalidade-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <div class="modalidade-card-body">
+                        <h3>Personal Trainer</h3>
+                        <p>Atendimento individualizado com profissionais certificados. Resultados mais rápidos e seguros.</p>
+                        <a href="https://wa.me/5521999999999?text=Ol%C3%A1%2C+quero+informa%C3%A7%C3%B5es+sobre+Personal+Trainer%21" target="_blank" rel="noopener" class="btn btn-laranja btn-ripple btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Agende Aula Grátis</a>
+                    </div>
+                </div>
+                <div class="modalidade-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="modalidade-card-img" style="background-image:url('https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=600&q=80');"></div>
+                    <div class="modalidade-icon"><i class="fa-solid fa-fire"></i></div>
+                    <div class="modalidade-card-body">
+                        <h3>Funcional & Cross Training</h3>
+                        <p>Treinos dinâmicos em box ao ar livre coberto. Circuitos que mudam a cada dia para desafiar seus limites.</p>
+                        <a href="https://wa.me/5521999999999?text=Ol%C3%A1%2C+quero+experimentar+o+Funcional%21" target="_blank" rel="noopener" class="btn btn-laranja btn-ripple btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Agende Aula Grátis</a>
+                    </div>
+                </div>
+                <div class="modalidade-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="modalidade-card-img" style="background-image:url('https://images.unsplash.com/photo-1596357395217-80de13130e92?w=600&q=80');"></div>
+                    <div class="modalidade-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <div class="modalidade-card-body">
+                        <h3>Área de Cárdio</h3>
+                        <p>Esteiras com amortecimento, bikes com encosto e monitores cardíacos integrados. Conforto e segurança.</p>
+                        <a href="https://wa.me/5521999999999?text=Ol%C3%A1%2C+quero+conhecer+a+%C3%81rea+de+C%C3%A1rdio%21" target="_blank" rel="noopener" class="btn btn-laranja btn-ripple btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Agende Aula Grátis</a>
+                    </div>
+                </div>
+                <div class="modalidade-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="modalidade-card-img" style="background-image:url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80');"></div>
+                    <div class="modalidade-icon"><i class="fa-solid fa-apple-whole"></i></div>
+                    <div class="modalidade-card-body">
+                        <h3>Avaliação Física & Nutrição</h3>
+                        <p>Bioimpedância, dobras cutâneas e prescrição de treinos. Parceria com nutricionista esportivo.</p>
+                        <a href="https://wa.me/5521999999999?text=Ol%C3%A1%2C+quero+agendar+minha+Avalia%C3%A7%C3%A3o+F%C3%ADsica%21" target="_blank" rel="noopener" class="btn btn-laranja btn-ripple btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Agende Aula Grátis</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLANOS -->
+    <section class="planos-section" id="planos">
+        <div class="container">
+            <h2 data-aos="fade-up" style="text-align:center;">Escolha o plano ideal para o seu momento 🏆</h2>
+            <div class="planos-tabs" data-aos="fade-up" data-aos-delay="100">
+                <button class="plano-tab active" data-tab="mensal">Mensal</button>
+                <button class="plano-tab" data-tab="trimestral">Trimestral</button>
+                <button class="plano-tab" data-tab="semestral">Semestral</button>
+                <button class="plano-tab" data-tab="anual">Anual</button>
+            </div>
+            <div class="planos-grid" id="planosGrid" data-aos="fade-up" data-aos-delay="200">
+                <!-- Preenchido via JS -->
+            </div>
+            <div style="text-align:center;margin-top:28px;" data-aos="fade-up">
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1%2C+quero+ver+todos+os+planos+dispon%C3%ADveis%21" target="_blank" rel="noopener" class="btn btn-preto btn-ripple"><i class="fa-brands fa-whatsapp"></i> Ver Todos os Planos no WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="depoimentos-section" id="depoimentos">
+        <div class="container">
+            <h2 data-aos="fade-up" style="text-align:center;color:#fff;">+5.000 vidas transformadas</h2>
+            <p data-aos="fade-up" data-aos-delay="100" style="text-align:center;color:rgba(255,255,255,0.8);max-width:600px;margin:0 auto 36px;">Veja o que nossos alunos dizem sobre a experiência de treinar com a gente.</p>
+            <div class="depoimentos-grid">
+                <div class="depoimento-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="depoimento-estrelas">★★★★★</div>
+                    <p>"Entrei sedentário e em 6 meses participei da minha primeira corrida de 5 km! Equipe nota mil!"</p>
+                    <span class="depoimento-autor">– Pedro, Copacabana</span>
+                </div>
+                <div class="depoimento-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="depoimento-estrelas">★★★★★</div>
+                    <p>"As aulas de spinning mudaram minha rotina. Saio de lá renovada todos os dias. Super recomendo!"</p>
+                    <span class="depoimento-autor">– Ana, Botafogo</span>
+                </div>
+                <div class="depoimento-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="depoimento-estrelas">★★★★★</div>
+                    <p>"Estrutura incrível, professores atenciosos e o personal me ajudou a ganhar 8kg de massa magra."</p>
+                    <span class="depoimento-autor">– Lucas, Barra da Tijuca</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 data-aos="fade-up" style="text-align:center;">Tire suas dúvidas</h2>
+            <div class="faq-accordion" data-aos="fade-up" data-aos-delay="100">
+                <div class="faq-item">
+                    <div class="faq-question">Preciso de atestado médico para começar? <i class="fa-solid fa-plus"></i></div>
+                    <div class="faq-answer"><p>Recomendamos uma avaliação médica prévia para sua segurança, mas não é obrigatória para a aula experimental. Nossa equipe faz uma anamnese completa antes de qualquer atividade.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Vocês aceitam Gympass ou TotalPass? <i class="fa-solid fa-plus"></i></div>
+                    <div class="faq-answer"><p>Sim, somos credenciados! Consulte a lista completa de parceiros na seção de Planos ou fale conosco pelo WhatsApp.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Tem estacionamento? <i class="fa-solid fa-plus"></i></div>
+                    <div class="faq-answer"><p>Sim, temos estacionamento conveniado ao lado da academia, com desconto especial para nossos alunos.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Como funciona a aula experimental? <i class="fa-solid fa-plus"></i></div>
+                    <div class="faq-answer"><p>Você agenda um horário, vem com roupa confortável e um de nossos professores fará uma avaliação rápida e um treino adaptado ao seu nível. É gratuito e sem compromisso!</p></div>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:28px;" data-aos="fade-up">
+                <a href="https://wa.me/5521999999999?text=Ol%C3%A1%2C+ainda+tenho+d%C3%BAvidas%21" target="_blank" rel="noopener" class="btn btn-laranja btn-ripple btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Ainda tem dúvidas? Chame no WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final" id="cta-final">
+        <div class="container" data-aos="fade-up">
+            <h2>Sua melhor versão começa aqui.</h2>
+            <p>Agende sua aula grátis e ganhe <strong>10% off</strong> no primeiro plano. Use o cupom <strong style="color:#f15a24;">SUPERA10</strong>.</p>
+            <form class="newsletter-form" action="#" method="POST">
+                <input type="email" placeholder="Seu melhor e-mail" required aria-label="E-mail para newsletter">
+                <button type="submit" class="btn btn-laranja btn-ripple">Quero Aproveitar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Sobre</h4>
+                    <p style="font-size:0.85rem;color:#bbb;">Academia Rio Fitness<br>Ale Consultoria e Servicos Veterinarios LTDA</p>
+                    <p class="footer-cnpj">CNPJ: 64.786.364/0001-21</p>
+                </div>
+                <div>
+                    <h4>Links Úteis</h4>
+                    <a href="#inicio">Início</a>
+                    <a href="#sobre">Sobre Nós</a>
+                    <a href="#modalidades">Modalidades</a>
+                    <a href="#planos">Planos</a>
+                    <a href="#depoimentos">Depoimentos</a>
+                    <a href="#contato">Contato</a>
+                </div>
+                <div>
+                    <h4>Contato</h4>
+                    <p style="font-size:0.85rem;color:#bbb;">Rua Exemplo, 123 – Copacabana<br>Rio de Janeiro – RJ<br>CEP: 22000-000</p>
+                    <p style="font-size:0.85rem;color:#bbb;">📞 (21) 99999-9999<br>🕐 Seg-Sex: 06h-23h | Sáb: 08h-18h | Dom: 09h-14h</p>
+                </div>
+                <div>
+                    <h4>Redes Sociais</h4>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Ale Consultoria e Servicos Veterinarios LTDA – Todos os direitos reservados. Desenvolvido com suor e muita energia boa. 💪</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLUTUANTE -->
+    <a href="https://wa.me/5521999999999?text=Ol%C3%A1%2C+estou+no+site+e+quero+treinar%21+%F0%9F%92%AA" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp" title="Pronto para treinar? 💪">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializa AOS
+            AOS.init({
+                duration: 700,
+                easing: 'ease-out-cubic',
+                once: true,
+                offset: 60,
+                disable: 'mobile'
+            });
+
+            // Header scroll effect
+            const header = document.getElementById('header');
+            const hamburgerBtn = document.getElementById('hamburgerBtn');
+            const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+            function updateHeaderScroll() {
+                if (window.scrollY > 60) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            }
+            window.addEventListener('scroll', updateHeaderScroll, { passive: true });
+            updateHeaderScroll();
+
+            // Menu mobile
+            function toggleMenu() {
+                const isActive = mobileMenuOverlay.classList.contains('active');
+                if (isActive) {
+                    mobileMenuOverlay.classList.remove('active');
+                    hamburgerBtn.classList.remove('active');
+                    hamburgerBtn.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                } else {
+                    mobileMenuOverlay.classList.add('active');
+                    hamburgerBtn.classList.add('active');
+                    hamburgerBtn.setAttribute('aria-expanded', 'true');
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+            hamburgerBtn.addEventListener('click', toggleMenu);
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenuOverlay.classList.remove('active');
+                    hamburgerBtn.classList.remove('active');
+                    hamburgerBtn.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // Hero Slider
+            const slides = document.querySelectorAll('.hero-slide');
+            const dotsContainer = document.getElementById('heroDots');
+            const prevBtn = document.getElementById('heroPrev');
+            const nextBtn = document.getElementById('heroNext');
+            let currentSlide = 0;
+            let slideInterval;
+            const totalSlides = slides.length;
+
+            // Cria dots
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement('span');
+                dot.classList.add('hero-dot');
+                if (i === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToSlide(i));
+                dotsContainer.appendChild(dot);
+            }
+            const dots = document.querySelectorAll('.hero-dot');
+
+            function goToSlide(index) {
+                slides[currentSlide].classList.remove('active');
+                dots[currentSlide].classList.remove('active');
+                currentSlide = index;
+                if (currentSlide >= totalSlides) currentSlide = 0;
+                if (currentSlide < 0) currentSlide = totalSlides - 1;
+                slides[currentSlide].classList.add('active');
+                dots[currentSlide].classList.add('active');
+                resetInterval();
+            }
+
+            function nextSlide() { goToSlide(currentSlide + 1); }
+
+            function prevSlide() { goToSlide(currentSlide - 1); }
+
+            function resetInterval() {
+                clearInterval(slideInterval);
+                slideInterval = setInterval(nextSlide, 6000);
+            }
+
+            prevBtn.addEventListener('click', prevSlide);
+            nextBtn.addEventListener('click', nextSlide);
+            slideInterval = setInterval(nextSlide, 6000);
+
+            // FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    // Fecha todos
+                    faqItems.forEach(i => i.classList.remove('active'));
+                    // Abre o clicado se não estava ativo
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+
+            // Planos tabs e dados
+            const planosData = {
+                mensal: [
+                    { nome: 'Plano Silver', preco: '99,90', beneficios: ['Acesso ilimitado à musculação',
+                            'Horário livre', 'Avaliação física inicial'
+                        ], destaque: false, badge: '' },
+                    { nome: 'Plano Gold', preco: '149,90', beneficios: ['Tudo do Silver', 'Aulas coletivas',
+                            'Cadeira cativa em spinning', 'App de treinos'
+                        ], destaque: true, badge: 'Mais Popular' },
+                    { nome: 'Plano Diamond', preco: '219,90', beneficios: ['Tudo do Gold', 'Personal 2x/semana',
+                            'Nutricionista parceiro', 'Vagas em todas as turmas'
+                        ], destaque: false, badge: '' },
+                ],
+                trimestral: [
+                    { nome: 'Plano Silver Trimestral', preco: '89,90', beneficios: ['Acesso ilimitado',
+                            'Desconto de 10%', 'Avaliação física'
+                        ], destaque: false, badge: '' },
+                    { nome: 'Plano Gold Trimestral', preco: '134,90', beneficios: ['Tudo do Silver', 'Aulas coletivas',
+                            'App de treinos', 'Desconto extra'
+                        ], destaque: true, badge: 'Melhor Custo-Benefício' },
+                    { nome: 'Plano Diamond Trimestral', preco: '197,90', beneficios: ['Tudo do Gold',
+                            'Personal 2x/semana', 'Nutricionista', 'Massagem 1x/mês'
+                        ], destaque: false, badge: '' },
+                ],
+                semestral: [
+                    { nome: 'Plano Silver Semestral', preco: '79,90', beneficios: ['Acesso ilimitado',
+                            'Desconto de 20%', 'Avaliação física completa'
+                        ], destaque: false, badge: '' },
+                    { nome: 'Plano Gold Semestral', preco: '119,90', beneficios: ['Tudo do Silver', 'Aulas coletivas',
+                            'App premium', 'Cadeira cativa'
+                        ], destaque: true, badge: 'Mais Popular' },
+                    { nome: 'Plano Diamond Semestral', preco: '175,90', beneficios: ['Tudo do Gold',
+                            'Personal 2x/semana', 'Nutricionista', 'Massagem 2x/mês'
+                        ], destaque: false, badge: '' },
+                ],
+                anual: [
+                    { nome: 'Plano Silver Anual', preco: '69,90', beneficios: ['Acesso ilimitado', 'Desconto de 30%',
+                            'Avaliação física completa', 'Kit boas-vindas'
+                        ], destaque: false, badge: '' },
+                    { nome: 'Plano Gold Anual', preco: '104,90', beneficios: ['Tudo do Silver', 'Aulas coletivas',
+                            'App premium', 'Cadeira cativa', 'Congelamento 30 dias'
+                        ], destaque: true, badge: 'Melhor Custo-Benefício' },
+                    { nome: 'Plano Diamond Anual', preco: '153,90', beneficios: ['Tudo do Gold',
+                            'Personal 3x/semana', 'Nutricionista mensal', 'Massagem semanal', 'Prioridade total'
+                        ], destaque: false, badge: '' },
+                ],
+            };
+
+            const planosGrid = document.getElementById('planosGrid');
+            const planosTabs = document.querySelectorAll('.plano-tab');
+            let activeTab = 'mensal';
+
+            function renderPlanos(tab) {
+                const planos = planosData[tab];
+                planosGrid.innerHTML = planos.map(plano => `
+                    <div class="plano-card ${plano.destaque ? 'destaque' : ''}" data-aos="fade-up" data-aos-duration="600">
+                        ${plano.badge ? `<span class="badge-popular">${plano.badge}</span>` : ''}
+                        <i class="fa-solid fa-medal" style="font-size:2.2rem;color:#c9a84c;margin-bottom:8px;display:block;"></i>
+                        <h3>${plano.nome}</h3>
+                        <div class="plano-preco">R$ ${plano.preco}<small>/mês</small></div>
+                        <ul class="plano-beneficios">
+                            ${plano.beneficios.map(b => `<li><i class="fa-solid fa-check"></i> ${b}</li>`).join('')}
+                        </ul>
+                        <a href="https://wa.me/5521999999999?text=Ol%C3%A1%2C+quero+contratar+o+${encodeURIComponent(plano.nome)}%21" target="_blank" rel="noopener" class="btn btn-whatsapp btn-ripple" style="width:100%;justify-content:center;">
+                            <i class="fa-brands fa-whatsapp"></i> Contratar via WhatsApp
+                        </a>
+                    </div>
+                `).join('');
+                // Re-inicializa AOS para novos elementos
+                setTimeout(() => {
+                    AOS.refresh();
+                }, 100);
+            }
+
+            renderPlanos(activeTab);
+
+            planosTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    planosTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    activeTab = this.getAttribute('data-tab');
+                    renderPlanos(activeTab);
+                });
+            });
+
+            // Fecha menu mobile ao clicar no overlay (fora dos links)
+            mobileMenuOverlay.addEventListener('click', function(e) {
+                if (e.target === mobileMenuOverlay) {
+                    toggleMenu();
+                }
+            });
+
+            // Escape key fecha menu
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && mobileMenuOverlay.classList.contains('active')) {
+                    toggleMenu();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
